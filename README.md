@@ -1,2 +1,5 @@
-# chatbot-pdf
-ask your pdf, openai, langchain, pinecone, streamlit
+# chatbot-pdf ALAN ALEXIS HERNANDEZ FRANCISCO 
+Ask your pdf
+Librerias usadas: openai, langchain, pinecone, streamlit
+
+Pasos
