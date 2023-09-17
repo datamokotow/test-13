@@ -12,6 +12,12 @@ import tiktoken
 
 os.environ["OPENAI_API_KEY"] = st.secrets['OPENAI_API_KEY']
 pinecone.init(api_key=st.secrets['PINECONE_API_KEY'], environment=st.secrets['PINECONE_ENVIRONMENT'])
+pinecone.init(      
+	=st.secrets['PINECONE_API_KEY'],      
+	environment=st.secrets['PINECONE_ENVIRONMENT']      
+)      
+index = pinecone.Index('test-01')
+
 
 # Funciones de procesamiento de documentos
 def cargar_documento(archivo):
