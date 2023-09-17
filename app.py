@@ -11,9 +11,11 @@ import tempfile
 import tiktoken
 
 # Configuración de las API keys
-os.environ["OPENAI_API_KEY"] = "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"
-pinecone.init(api_key='500b9641-7f7d-463c-8970-6668996aa53a', environment='asia-southeast1-gcp-free')
+#os.environ["OPENAI_API_KEY"] = "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"
+#pinecone.init(api_key='500b9641-7f7d-463c-8970-6668996aa53a', environment='asia-southeast1-gcp-free')
 
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
+pinecone.init(api_key="PINECONE_API_KEY", environment="PINECONE_ENVIRONMENT")
 
 # Funciones de procesamiento de documentos
 def cargar_documento(archivo):
