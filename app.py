@@ -15,7 +15,7 @@ import tiktoken
 #pinecone.init(api_key='500b9641-7f7d-463c-8970-6668996aa53a', environment='asia-southeast1-gcp-free')
 
 os.environ["OPENAI_API_KEY"] = st.secrets['OPENAI_API_KEY']
-pinecone.init(api_key=st.secrets['PINECONE_API_KEY'), environment=st.secrets['PINECONE_ENVIRONMENT'])
+pinecone.init(api_key=st.secrets['PINECONE_API_KEY'], environment=st.secrets['PINECONE_ENVIRONMENT'])
 
 # Funciones de procesamiento de documentos
 def cargar_documento(archivo):
